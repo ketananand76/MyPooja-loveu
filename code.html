@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Pooja - My Heart's Secret</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef, #fecfef);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 3em;
+            color: #e91e63;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .heart {
+            font-size: 4em;
+            color: #ff4081;
+            animation: pulse 1.5s infinite;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #c2185b;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>For Pooja</h1>
+        <div class="heart">❤️</div>
+        <p>Hey Pooja, my amazing best friend! From the moment we met, you've filled my life with joy, laughter, and endless adventures. I love you more than words can say – bahot bahot bahot jyada! You're my sunshine, my confidant, and the one who makes every day special.</p>
+        <p>This little website is just for you, to show how much you mean to me. Let's create more memories together!</p>
+        <div class="images">
+            <!-- Replace with your actual image URLs -->
+            <img src="https://via.placeholder.com/100?text=Memory1" alt="Memory 1">
+            <img src="https://via.placeholder.com/100?text=Memory2" alt="Memory 2">
+            <img src="https://via.placeholder.com/100?text=Memory3" alt="Memory 3">
+        </div>
+        <a href="#" class="button">Click for a Surprise!</a>
+    </div>
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+            alert('Pooja, you are the best! 😘');
+        });
+    </script>
+</body>
+</html>
